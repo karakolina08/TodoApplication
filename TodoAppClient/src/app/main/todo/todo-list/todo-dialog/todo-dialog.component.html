@@ -1,0 +1,57 @@
+<div class="container-dialog" fxLayout="column" fxLayoutAlign="space-between stretch">
+  <div>
+    <md-toolbar class="container-dialog-header">
+      <span>Task Detail</span>
+      <span class="example-spacer"></span>
+      <md-icon class="example-icon" (click)="cancel()" mdTooltip="Close Dialog">close</md-icon>
+    </md-toolbar>
+    <div class="container-dialog-content">
+
+      <form #formTask="ngForm" fxLayout="column">
+
+          <div fxLayout="row" fxLayoutAlign="start center" >
+              <div fxFlex>
+                <md-input-container fxFill>
+                  <input mdInput placeholder="Description" type="text" name="description" required [(ngModel)]="task.description" required>
+                </md-input-container>
+              </div>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="start center" >
+            <div fxFlex>
+              <md-input-container fxFill class="input-date">
+                <input mdInput type="date" placeholder="Due Date" name="dueDate"
+                      [ngModel]="task.dueDate | moment : 'YYYY-MM-DD'" (ngModelChange)="task.dueDate=$event" >
+              </md-input-container>
+            </div>
+          </div>
+
+          <div fxLayout="row" class="text-title-form" >
+              <span>Priority: </span>
+          </div>
+
+          <div fxLayout="row" fxLayoutAlign="start center" style="padding: 0px 15px;">
+            <md-radio-group fxLayout="row" fxLayoutAlign="space-around center" name="priority" [(ngModel)]="task.priority" style="width: 100%;" required>
+              <md-radio-button class="todo-radio-button" value="1">High</md-radio-button>
+              <md-radio-button class="todo-radio-button" value="2">Normal</md-radio-button>
+              <md-radio-button class="todo-radio-button" value="3">Low</md-radio-button>
+            </md-radio-group>
+          </div>
+      </form>
+
+    </div>
+  </div>
+  <div class="container-dialog-footer">
+    <div fxLayout="row"  fxLayout.xs="column" fxLayoutAlign="end center" class="footer-form">
+      <button md-raised-button class="button-footer save" (click)="save()" [disabled]="!formTask.valid" >
+        <div fxFlow="row" fxLayoutAlign="center center">
+          <md-icon class="margin-icon-btn">save</md-icon> Save
+        </div>
+      </button>
+      <button md-raised-button class="button-footer clear" (click)="cancel()">
+        <div fxFlow="row" fxLayoutAlign="center center">
+          <md-icon class="margin-icon-btn">clear</md-icon> Cancel
+        </div>
+      </button>
+    </div>
+  </div>
+</div>

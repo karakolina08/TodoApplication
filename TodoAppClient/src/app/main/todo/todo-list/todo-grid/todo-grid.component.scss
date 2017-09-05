@@ -1,0 +1,37 @@
+.button-home{
+    color: rgba(255,255,255,.87);
+    background-color: #2196F3
+}
+
+#todoGrid{
+    /deep/ .dx-datagrid-headers {
+        background-color: #656970;
+        color:  white; 
+        font-weight: 400;
+    }
+}
+
+.low-icon{
+  background-color: transparent;
+  color: green;
+}
+
+.high-icon{
+  background-color: transparent;
+  color: red;
+}
+
+.normal-icon{
+  background-color: transparent;
+  color: #FFA726;
+}
+
+.icon-button-grid{
+    width: 20px;
+    height: 20px;
+    line-height: 16px;
+}
+
+.text-icon{
+    margin-left: 8px;
+}

@@ -1,0 +1,813 @@
+2017-09-04T17:36:42.4287154-05:00  [INF] User profile is available. Using '"C:\Users\Leon\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-04T17:36:45.4884793-05:00 0HL7JSLM3R26N [INF] Request starting HTTP/1.1 GET http://localhost:62633/   (e5be5b71)
+2017-09-04T17:36:47.3281373-05:00 0HL7JSLM3R26N [INF] The file "/index.html" was not modified (f1f8d725)
+2017-09-04T17:36:47.8165744-05:00 0HL7JSLM3R26N [INF] Request finished in 2412.4739ms 304 text/html (15c52c40)
+2017-09-04T17:36:47.9026532-05:00 0HL7JSLM3R26O [INF] Request starting HTTP/1.1 GET http://localhost:62633/inline.bundle.js   (e5be5b71)
+2017-09-04T17:36:47.9106585-05:00 0HL7JSLM3R26O [INF] The file "/inline.bundle.js" was not modified (f1f8d725)
+2017-09-04T17:36:47.9206687-05:00 0HL7JSLM3R26O [INF] Request finished in 17.9908ms 304 application/javascript (15c52c40)
+2017-09-04T17:36:47.9286744-05:00 0HL7JSLM3R26P [INF] Request starting HTTP/1.1 GET http://localhost:62633/styles.bundle.js   (e5be5b71)
+2017-09-04T17:36:47.9316778-05:00 0HL7JSLM3R26P [INF] The file "/styles.bundle.js" was not modified (f1f8d725)
+2017-09-04T17:36:47.9797219-05:00 0HL7JSLM3R26P [INF] Request finished in 20.5623ms 304 application/javascript (15c52c40)
+2017-09-04T17:36:47.9967373-05:00 0HL7JSLM3R26Q [INF] Request starting HTTP/1.1 GET http://localhost:62633/scripts.bundle.js   (e5be5b71)
+2017-09-04T17:36:48.0227611-05:00 0HL7JSLM3R26R [INF] Request starting HTTP/1.1 GET http://localhost:62633/polyfills.bundle.js   (e5be5b71)
+2017-09-04T17:36:48.0267648-05:00 0HL7JSLM3R26Q [INF] The file "/scripts.bundle.js" was not modified (f1f8d725)
+2017-09-04T17:36:48.0307688-05:00 0HL7JSLM3R26S [INF] Request starting HTTP/1.1 GET http://localhost:62633/main.bundle.js   (e5be5b71)
+2017-09-04T17:36:48.0758086-05:00 0HL7JSLM3R26S [INF] The file "/main.bundle.js" was not modified (f1f8d725)
+2017-09-04T17:36:48.0878187-05:00 0HL7JSLM3R26R [INF] The file "/polyfills.bundle.js" was not modified (f1f8d725)
+2017-09-04T17:36:48.0908218-05:00 0HL7JSLM3R26Q [INF] Request finished in 108.621ms 304 application/javascript (15c52c40)
+2017-09-04T17:36:48.1178473-05:00 0HL7JSLM3R26T [INF] Request starting HTTP/1.1 GET http://localhost:62633/vendor.bundle.js   (e5be5b71)
+2017-09-04T17:36:48.1238523-05:00 0HL7JSLM3R26T [INF] The file "/vendor.bundle.js" was not modified (f1f8d725)
+2017-09-04T17:36:48.1508755-05:00 0HL7JSLM3R26S [INF] Request finished in 121.2805ms 304 application/javascript (15c52c40)
+2017-09-04T17:36:48.1618859-05:00 0HL7JSLM3R26R [INF] Request finished in 170.3309ms 304 application/javascript (15c52c40)
+2017-09-04T17:36:48.1959162-05:00 0HL7JSLM3R26T [INF] Request finished in 105.775ms 304 application/javascript (15c52c40)
+2017-09-04T17:36:59.4420597-05:00 0HL7JSLM3R26U [INF] Request starting HTTP/1.1 GET http://localhost:62633/assets/img/icon.png   (e5be5b71)
+2017-09-04T17:36:59.4450620-05:00 0HL7JSLM3R26U [INF] The file "/assets/img/icon.png" was not modified (f1f8d725)
+2017-09-04T17:36:59.4570748-05:00 0HL7JSLM3R26U [INF] Request finished in 18.9921ms 304 image/png (15c52c40)
+2017-09-04T17:37:12.4619334-05:00 0HL7JSLM3R26V [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/userService/create application/json 94 (e5be5b71)
+2017-09-04T17:37:22.2117243-05:00 0HL7JSLM3R26V [INF] Executing action method "TodoAppServer.Controllers.Api.ApiUserController.CreatingUser (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.UserVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T17:38:52.3280126-05:00 0HL7JSLM3R26V [INF] Executed DbCommand (5,529ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-04T17:39:03.9552687-05:00 0HL7JSLM3R26V [INF] Executed DbCommand (770ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-04T17:39:04.2765581-05:00 0HL7JSLM3R26V [INF] Executed DbCommand (238ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-04T17:39:09.4842543-05:00 0HL7JSLM3R26V [INF] Executed DbCommand (4,055ms) [Parameters=[@p0='?', @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?', @p4='?', @p5='?', @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?' (Size = 4000), @p13='?', @p14='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Td_User] ([AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [Name], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+SELECT [Id]
+FROM [Td_User]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); (6438bdd5)
+2017-09-04T17:39:18.3872857-05:00 0HL7JSLM3R26V [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T17:39:18.8617132-05:00 0HL7JSLM3R26V [INF] Executed action "TodoAppServer.Controllers.Api.ApiUserController.CreatingUser (TodoAppServer)" in 120712.4217ms (afa2e885)
+2017-09-04T17:39:18.8797287-05:00 0HL7JSLM3R26V [INF] Request finished in 126416.9803ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T17:42:01.5159852-05:00 0HL7JSLM3R270 [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 62 (e5be5b71)
+2017-09-04T17:42:04.1964016-05:00 0HL7JSLM3R270 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T17:42:24.7509414-05:00 0HL7JSLM3R270 [INF] Executed DbCommand (530ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-04T17:42:37.1681396-05:00 0HL7JSLM3R270 [INF] Executed DbCommand (303ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-04T17:42:41.0636538-05:00 0HL7JSLM3R270 [INF] Executed DbCommand (114ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [TdUserRole] AS [userRole]
+INNER JOIN [TdRole] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-04T17:42:41.1967742-05:00 0HL7JSLM3R270 [INF] Executed DbCommand (3ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[TodoUserId], [uc].[UserId]
+FROM [TdUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-04T17:42:42.5259719-05:00 0HL7JSLM3R270 [INF] Creating key {4bf15ab4-e9e2-48bd-bdad-50c59bc48729} with creation date 2017-09-04 22:42:42Z, activation date 2017-09-04 22:42:41Z, and expiration date 2017-12-03 22:42:41Z. (77afce94)
+2017-09-04T17:42:43.3847469-05:00 0HL7JSLM3R270 [INF] Writing data to file '"C:\Users\Leon\AppData\Local\ASP.NET\DataProtection-Keys\key-4bf15ab4-e9e2-48bd-bdad-50c59bc48729.xml"'. (da22a8b1)
+2017-09-04T17:42:44.1614478-05:00 0HL7JSLM3R270 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-04T17:42:53.6820342-05:00 0HL7JSLM3R270 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T17:42:53.8021441-05:00 0HL7JSLM3R270 [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 50913.5293ms (afa2e885)
+2017-09-04T17:42:53.8381754-05:00 0HL7JSLM3R270 [INF] Request finished in 52527.013ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T17:54:24.1454095-05:00 0HL7JSLM3R271 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/login   (e5be5b71)
+2017-09-04T17:54:25.1852920-05:00 0HL7JSLM3R271 [INF] Request finished in 1142.1008ms 204  (15c52c40)
+2017-09-04T17:54:25.2233255-05:00 0HL7JSLM3R272 [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 55 (e5be5b71)
+2017-09-04T17:54:31.9634053-05:00 0HL7JSLM3R272 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T17:54:47.7856758-05:00 0HL7JSLM3R272 [INF] Executed DbCommand (6,095ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-04T17:54:51.0936589-05:00 0HL7JSLM3R272 [INF] Executed DbCommand (2,050ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-04T17:54:58.5343726-05:00 0HL7JSLM3R272 [INF] Executed DbCommand (4,518ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [TdUserRole] AS [userRole]
+INNER JOIN [TdRole] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-04T17:54:59.5132543-05:00 0HL7JSLM3R272 [INF] Executed DbCommand (968ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[TodoUserId], [uc].[UserId]
+FROM [TdUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-04T17:54:59.7094293-05:00 0HL7JSLM3R272 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-04T17:54:59.8405483-05:00 0HL7JSLM3R272 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T17:54:59.8485544-05:00 0HL7JSLM3R272 [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 33659.0189ms (afa2e885)
+2017-09-04T17:54:59.8575633-05:00 0HL7JSLM3R272 [INF] Request finished in 34634.5688ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:07:50.7441614-05:00  [INF] User profile is available. Using '"C:\Users\Leon\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-04T18:09:52.8156524-05:00 0HL7JT86C9CMR [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T18:09:55.1957972-05:00 0HL7JT86C9CMR [INF] Request finished in 2564.6923ms 204  (15c52c40)
+2017-09-04T18:09:55.3259134-05:00 0HL7JT86C9CMS [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 95 (e5be5b71)
+2017-09-04T18:10:04.0928609-05:00 0HL7JT86C9CMS [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:11:10.7920026-05:00 0HL7JT86C9CMS [INF] Executed DbCommand (5,506ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Td_Todo] ([Description], [DueDate], [IsCompleted], [Priority], [TdUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Td_Todo]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); (6438bdd5)
+2017-09-04T18:11:22.4595247-05:00 0HL7JT86C9CMS [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:11:22.7487852-05:00 0HL7JT86C9CMS [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 82829.3942ms (afa2e885)
+2017-09-04T18:11:22.9179374-05:00 0HL7JT86C9CMS [INF] Request finished in 87569.0644ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:11:23.5825368-05:00 0HL7JT86C9CMT [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:11:23.7356749-05:00 0HL7JT86C9CMT [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:11:27.0216382-05:00 0HL7JT86C9CMT [INF] Executed DbCommand (1,984ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:11:27.0456599-05:00 0HL7JT86C9CMT [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:11:27.0856960-05:00 0HL7JT86C9CMT [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 3374.7094ms (afa2e885)
+2017-09-04T18:11:27.1097188-05:00 0HL7JT86C9CMT [INF] Request finished in 3521.0322ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:16:51.3840739-05:00 0HL7JT86C9CMV [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:16:51.3840739-05:00 0HL7JT86C9CMU [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:16:54.7210883-05:00 0HL7JT86C9CMU [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:17:35.2146223-05:00 0HL7JT86C9CMV [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:17:56.9362131-05:00 0HL7JT86C9CMV [INF] Executed DbCommand (2,130ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:17:56.9372144-05:00 0HL7JT86C9CMU [INF] Executed DbCommand (2,130ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:18:25.0295623-05:00 0HL7JT86C9CMV [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:18:25.0335667-05:00 0HL7JT86C9CMU [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:18:25.0595890-05:00 0HL7JT86C9CMU [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 90736.6085ms (afa2e885)
+2017-09-04T18:18:25.0846127-05:00 0HL7JT86C9CMV [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 90739.6667ms (afa2e885)
+2017-09-04T18:18:25.1476696-05:00 0HL7JT86C9CMV [INF] Request finished in 94246.8938ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:18:25.1476696-05:00 0HL7JT86C9CMU [INF] Request finished in 94223.8276ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:23:39.1214879-05:00 0HL7JT86C9CN0 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:23:39.3136589-05:00 0HL7JT86C9CN1 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:23:39.5889083-05:00 0HL7JT86C9CN1 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:23:49.1295147-05:00 0HL7JT86C9CN0 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:24:30.1678139-05:00 0HL7JT86C9CN0 [INF] Executed DbCommand (2,682ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:24:30.1678139-05:00 0HL7JT86C9CN1 [INF] Executed DbCommand (2,670ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:24:49.6343708-05:00 0HL7JT86C9CN0 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:24:49.6583925-05:00 0HL7JT86C9CN1 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:24:49.7124420-05:00 0HL7JT86C9CN0 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 70128.4958ms (afa2e885)
+2017-09-04T18:24:50.1608465-05:00 0HL7JT86C9CN1 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 70080.6723ms (afa2e885)
+2017-09-04T18:24:50.2789522-05:00 0HL7JT86C9CN1 [INF] Request finished in 71034.9742ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:24:50.2789522-05:00 0HL7JT86C9CN0 [INF] Request finished in 71349.0921ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:28:33.5463018-05:00 0HL7JT86C9CN2 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:28:33.5463018-05:00 0HL7JT86C9CN3 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:28:35.1477469-05:00 0HL7JT86C9CN3 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:28:35.1487471-05:00 0HL7JT86C9CN2 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:28:37.1865843-05:00 0HL7JT86C9CN2 [INF] Executed DbCommand (556ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:28:37.1875860-05:00 0HL7JT86C9CN3 [INF] Executed DbCommand (565ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:28:37.4718435-05:00 0HL7JT86C9CN3 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:28:37.4918785-05:00 0HL7JT86C9CN2 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:28:37.4968672-05:00 0HL7JT86C9CN2 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 2600.5528ms (afa2e885)
+2017-09-04T18:28:37.4988667-05:00 0HL7JT86C9CN3 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 2622.3774ms (afa2e885)
+2017-09-04T18:28:37.5769364-05:00 0HL7JT86C9CN2 [INF] Request finished in 4331.666ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:28:37.5769364-05:00 0HL7JT86C9CN3 [INF] Request finished in 4334.0428ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:32:06.8148683-05:00 0HL7JT86C9CN4 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:32:06.9680060-05:00 0HL7JT86C9CN5 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:32:07.0470769-05:00 0HL7JT86C9CN4 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:32:07.2062224-05:00 0HL7JT86C9CN5 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:32:07.2712807-05:00 0HL7JT86C9CN5 [INF] Executed DbCommand (48ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:32:07.2782866-05:00 0HL7JT86C9CN4 [INF] Executed DbCommand (91ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:32:07.3713694-05:00 0HL7JT86C9CN5 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:32:07.3923899-05:00 0HL7JT86C9CN5 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 171.2175ms (afa2e885)
+2017-09-04T18:32:07.5555374-05:00 0HL7JT86C9CN5 [INF] Request finished in 560.1652ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:32:09.2010208-05:00 0HL7JT86C9CN4 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:32:09.4182159-05:00 0HL7JT86C9CN4 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 2340.8601ms (afa2e885)
+2017-09-04T18:32:09.6203986-05:00 0HL7JT86C9CN4 [INF] Request finished in 2839.8671ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:37:47.2361748-05:00 0HL7JT86C9CN6 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:37:47.3763012-05:00 0HL7JT86C9CN7 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:37:47.5394479-05:00 0HL7JT86C9CN6 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:37:47.5594660-05:00 0HL7JT86C9CN7 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:37:48.1840297-05:00 0HL7JT86C9CN6 [INF] Executed DbCommand (72ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:37:48.2320726-05:00 0HL7JT86C9CN7 [INF] Executed DbCommand (79ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:37:48.2550930-05:00 0HL7JT86C9CN6 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:37:48.2641023-05:00 0HL7JT86C9CN6 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 721.1161ms (afa2e885)
+2017-09-04T18:37:48.2801160-05:00 0HL7JT86C9CN6 [INF] Request finished in 1043.7452ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:37:48.2811157-05:00 0HL7JT86C9CN7 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:37:48.3071407-05:00 0HL7JT86C9CN7 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 773.9634ms (afa2e885)
+2017-09-04T18:37:48.3141463-05:00 0HL7JT86C9CN7 [INF] Request finished in 961.1018ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:39:04.1927726-05:00 0HL7JT86C9CN8 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:39:04.2548281-05:00 0HL7JT86C9CN9 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:39:05.1696536-05:00 0HL7JT86C9CN8 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:39:05.2537291-05:00 0HL7JT86C9CN9 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:39:05.8643090-05:00 0HL7JT86C9CN8 [INF] Executed DbCommand (405ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:39:05.8643090-05:00 0HL7JT86C9CN9 [INF] Executed DbCommand (34ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:39:06.0454431-05:00 0HL7JT86C9CN8 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:39:06.0464440-05:00 0HL7JT86C9CN9 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:39:06.1505383-05:00 0HL7JT86C9CN8 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 1100.5449ms (afa2e885)
+2017-09-04T18:39:06.1515384-05:00 0HL7JT86C9CN9 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 1002.9742ms (afa2e885)
+2017-09-04T18:39:06.1985840-05:00 0HL7JT86C9CN8 [INF] Request finished in 2092.9626ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:39:06.2636411-05:00 0HL7JT86C9CN9 [INF] Request finished in 2116.4804ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:40:17.0985387-05:00 0HL7JT86C9CNA [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T18:40:17.2076367-05:00 0HL7JT86C9CNA [INF] Request finished in 119.2987ms 204  (15c52c40)
+2017-09-04T18:40:17.2516757-05:00 0HL7JT86C9CNB [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 95 (e5be5b71)
+2017-09-04T18:40:18.2285587-05:00 0HL7JT86C9CNB [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:40:54.7855306-05:00 0HL7JT86C9CNB [INF] Executed DbCommand (3,326ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Td_Todo] ([Description], [DueDate], [IsCompleted], [Priority], [TdUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Td_Todo]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); (6438bdd5)
+2017-09-04T18:40:55.1868911-05:00 0HL7JT86C9CNB [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:40:55.1908943-05:00 0HL7JT86C9CNB [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 37924.0753ms (afa2e885)
+2017-09-04T18:40:55.1989019-05:00 0HL7JT86C9CNB [INF] Request finished in 37983.9135ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:40:55.7954457-05:00 0HL7JT86C9CNC [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:40:55.8324741-05:00 0HL7JT86C9CNC [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:40:56.1397501-05:00 0HL7JT86C9CNC [INF] Executed DbCommand (296ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:40:56.1497584-05:00 0HL7JT86C9CNC [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:40:56.1547664-05:00 0HL7JT86C9CNC [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 321.2405ms (afa2e885)
+2017-09-04T18:40:56.1617708-05:00 0HL7JT86C9CNC [INF] Request finished in 366.8828ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:41:20.7399534-05:00 0HL7JT86C9CND [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T18:41:20.7619736-05:00 0HL7JT86C9CND [INF] Request finished in 21.8189ms 204  (15c52c40)
+2017-09-04T18:41:20.7769872-05:00 0HL7JT86C9CNE [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 95 (e5be5b71)
+2017-09-04T18:41:20.7980057-05:00 0HL7JT86C9CNE [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:41:21.0522373-05:00 0HL7JT86C9CNE [INF] Executed DbCommand (234ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Td_Todo] ([Description], [DueDate], [IsCompleted], [Priority], [TdUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Td_Todo]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); (6438bdd5)
+2017-09-04T18:41:21.0812624-05:00 0HL7JT86C9CNE [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:41:21.0882687-05:00 0HL7JT86C9CNE [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 289.5873ms (afa2e885)
+2017-09-04T18:41:21.0972764-05:00 0HL7JT86C9CNE [INF] Request finished in 328.5474ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:41:21.5717039-05:00 0HL7JT86C9CNF [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:41:21.5977266-05:00 0HL7JT86C9CNF [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:41:22.0701535-05:00 0HL7JT86C9CNF [INF] Executed DbCommand (459ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:41:22.0941744-05:00 0HL7JT86C9CNF [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:41:22.0991801-05:00 0HL7JT86C9CNF [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 500.3828ms (afa2e885)
+2017-09-04T18:41:22.1131927-05:00 0HL7JT86C9CNF [INF] Request finished in 539.5462ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:42:00.9312167-05:00 0HL7JT86C9CNG [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T18:42:00.9582403-05:00 0HL7JT86C9CNG [INF] Request finished in 19.6415ms 204  (15c52c40)
+2017-09-04T18:42:00.9692502-05:00 0HL7JT86C9CNH [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 97 (e5be5b71)
+2017-09-04T18:42:00.9882697-05:00 0HL7JT86C9CNH [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:42:01.2274827-05:00 0HL7JT86C9CNH [INF] Executed DbCommand (226ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Td_Todo] ([Description], [DueDate], [IsCompleted], [Priority], [TdUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Td_Todo]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); (6438bdd5)
+2017-09-04T18:42:01.2535066-05:00 0HL7JT86C9CNH [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:42:01.2585119-05:00 0HL7JT86C9CNH [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 273.2221ms (afa2e885)
+2017-09-04T18:42:01.2945440-05:00 0HL7JT86C9CNH [INF] Request finished in 308.1956ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:42:01.7349427-05:00 0HL7JT86C9CNI [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:42:01.7509548-05:00 0HL7JT86C9CNI [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:42:01.7919915-05:00 0HL7JT86C9CNI [INF] Executed DbCommand (33ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:42:01.8040031-05:00 0HL7JT86C9CNI [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:42:01.8070054-05:00 0HL7JT86C9CNI [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 57.1607ms (afa2e885)
+2017-09-04T18:42:01.8170148-05:00 0HL7JT86C9CNI [INF] Request finished in 83.1411ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:42:14.8057281-05:00 0HL7JT86C9CNJ [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T18:42:14.8177405-05:00 0HL7JT86C9CNJ [INF] Request finished in 9.4004ms 204  (15c52c40)
+2017-09-04T18:42:14.8237447-05:00 0HL7JT86C9CNK [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 146 (e5be5b71)
+2017-09-04T18:42:15.3522229-05:00 0HL7JT86C9CNK [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:42:20.7360791-05:00 0HL7JT86C9CNK [INF] Executed DbCommand (2ms) [Parameters=[@__pTodo_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ua].[Id], [ua].[Description], [ua].[DueDate], [ua].[IsCompleted], [ua].[Priority], [ua].[TdUserId]
+FROM [Td_Todo] AS [ua]
+WHERE [ua].[Id] = @__pTodo_Id_0 (6438bdd5)
+2017-09-04T18:42:21.2055402-05:00 0HL7JT86C9CNK [INF] Executed DbCommand (292ms) [Parameters=[@p1='?', @p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Td_Todo] SET [Description] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-04T18:42:21.5568174-05:00 0HL7JT86C9CNK [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:42:21.5588196-05:00 0HL7JT86C9CNK [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 6726.4336ms (afa2e885)
+2017-09-04T18:42:21.5678289-05:00 0HL7JT86C9CNK [INF] Request finished in 6741.4618ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:42:22.0112281-05:00 0HL7JT86C9CNL [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:42:22.0252399-05:00 0HL7JT86C9CNL [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:42:22.0342488-05:00 0HL7JT86C9CNL [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:42:22.0492631-05:00 0HL7JT86C9CNL [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:42:22.0542669-05:00 0HL7JT86C9CNL [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 26.6613ms (afa2e885)
+2017-09-04T18:42:22.0862973-05:00 0HL7JT86C9CNL [INF] Request finished in 61.6028ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:42:44.7807652-05:00 0HL7JT86C9CNM [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T18:42:44.7987814-05:00 0HL7JT86C9CNM [INF] Request finished in 15.6795ms 204  (15c52c40)
+2017-09-04T18:42:44.8127925-05:00 0HL7JT86C9CNN [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 148 (e5be5b71)
+2017-09-04T18:42:44.8378159-05:00 0HL7JT86C9CNN [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:42:44.8518285-05:00 0HL7JT86C9CNN [INF] Executed DbCommand (2ms) [Parameters=[@__pTodo_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ua].[Id], [ua].[Description], [ua].[DueDate], [ua].[IsCompleted], [ua].[Priority], [ua].[TdUserId]
+FROM [Td_Todo] AS [ua]
+WHERE [ua].[Id] = @__pTodo_Id_0 (6438bdd5)
+2017-09-04T18:42:44.9238927-05:00 0HL7JT86C9CNN [INF] Executed DbCommand (46ms) [Parameters=[@p1='?', @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Td_Todo] SET [Priority] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-04T18:42:44.9449129-05:00 0HL7JT86C9CNN [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:42:44.9539210-05:00 0HL7JT86C9CNN [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 120.3104ms (afa2e885)
+2017-09-04T18:42:44.9609277-05:00 0HL7JT86C9CNN [INF] Request finished in 146.3662ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:42:45.4173386-05:00 0HL7JT86C9CNO [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:42:45.4413606-05:00 0HL7JT86C9CNO [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:42:45.4563730-05:00 0HL7JT86C9CNO [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:42:45.4934076-05:00 0HL7JT86C9CNO [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:42:45.5034174-05:00 0HL7JT86C9CNO [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 59.5329ms (afa2e885)
+2017-09-04T18:42:45.5394495-05:00 0HL7JT86C9CNO [INF] Request finished in 124.2793ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:42:58.9575512-05:00 0HL7JT86C9CNP [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T18:42:58.9815736-05:00 0HL7JT86C9CNP [INF] Request finished in 32.8665ms 204  (15c52c40)
+2017-09-04T18:42:58.9915807-05:00 0HL7JT86C9CNQ [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 142 (e5be5b71)
+2017-09-04T18:42:59.0115995-05:00 0HL7JT86C9CNQ [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:42:59.1237014-05:00 0HL7JT86C9CNQ [INF] Executed DbCommand (102ms) [Parameters=[@__pTodo_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ua].[Id], [ua].[Description], [ua].[DueDate], [ua].[IsCompleted], [ua].[Priority], [ua].[TdUserId]
+FROM [Td_Todo] AS [ua]
+WHERE [ua].[Id] = @__pTodo_Id_0 (6438bdd5)
+2017-09-04T18:42:59.3569106-05:00 0HL7JT86C9CNQ [INF] Executed DbCommand (216ms) [Parameters=[@p1='?', @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Td_Todo] SET [IsCompleted] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-04T18:42:59.3739252-05:00 0HL7JT86C9CNQ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:42:59.3779303-05:00 0HL7JT86C9CNQ [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 368.4819ms (afa2e885)
+2017-09-04T18:42:59.3889399-05:00 0HL7JT86C9CNQ [INF] Request finished in 396.2658ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:42:59.3989493-05:00 0HL7JT86C9CNR [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:42:59.4109601-05:00 0HL7JT86C9CNR [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:42:59.4499949-05:00 0HL7JT86C9CNR [INF] Executed DbCommand (26ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:42:59.4870287-05:00 0HL7JT86C9CNR [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:42:59.4940362-05:00 0HL7JT86C9CNR [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 79.9567ms (afa2e885)
+2017-09-04T18:42:59.5080477-05:00 0HL7JT86C9CNR [INF] Request finished in 109.7659ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:43:26.0225136-05:00 0HL7JT86C9CNS [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:43:26.1476257-05:00 0HL7JT86C9CNS [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:43:26.1576339-05:00 0HL7JT86C9CNT [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:43:26.2807465-05:00 0HL7JT86C9CNT [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:43:26.3728284-05:00 0HL7JT86C9CNS [INF] Executed DbCommand (133ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:43:26.5750104-05:00 0HL7JT86C9CNS [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:43:26.7021262-05:00 0HL7JT86C9CNS [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 482.7812ms (afa2e885)
+2017-09-04T18:43:26.7481669-05:00 0HL7JT86C9CNS [INF] Request finished in 780.9162ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:43:27.8611692-05:00 0HL7JT86C9CNT [INF] Executed DbCommand (156ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:43:27.8761832-05:00 0HL7JT86C9CNT [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:43:27.8801879-05:00 0HL7JT86C9CNT [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 1632.388ms (afa2e885)
+2017-09-04T18:43:27.8861922-05:00 0HL7JT86C9CNT [INF] Request finished in 1761.8159ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:58:06.8657538-05:00 0HL7JT86C9CNV [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:58:06.8657538-05:00 0HL7JT86C9CNU [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:58:09.8944862-05:00 0HL7JT86C9CNV [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:58:10.8943881-05:00 0HL7JT86C9CNU [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:58:18.6223585-05:00 0HL7JT86C9CNU [INF] Executed DbCommand (3,026ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:58:18.6223585-05:00 0HL7JT86C9CNV [INF] Executed DbCommand (2,967ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:58:18.7554774-05:00 0HL7JT86C9CNV [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:58:18.7564791-05:00 0HL7JT86C9CNU [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:58:18.8755873-05:00 0HL7JT86C9CNU [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 9350.3429ms (afa2e885)
+2017-09-04T18:58:18.9076154-05:00 0HL7JT86C9CNV [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 9373.6674ms (afa2e885)
+2017-09-04T18:58:18.9156226-05:00 0HL7JT86C9CNV [INF] Request finished in 13054.3944ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:58:18.9156226-05:00 0HL7JT86C9CNU [INF] Request finished in 13024.559ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:58:27.4953628-05:00 0HL7JT86C9CO0 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T18:58:27.5664249-05:00 0HL7JT86C9CO0 [INF] Request finished in 84.2683ms 204  (15c52c40)
+2017-09-04T18:58:27.5674266-05:00 0HL7JT86C9CO1 [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 143 (e5be5b71)
+2017-09-04T18:58:27.6895352-05:00 0HL7JT86C9CO1 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:58:27.8496793-05:00 0HL7JT86C9CO1 [INF] Executed DbCommand (124ms) [Parameters=[@__pTodo_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ua].[Id], [ua].[Description], [ua].[DueDate], [ua].[IsCompleted], [ua].[Priority], [ua].[TdUserId]
+FROM [Td_Todo] AS [ua]
+WHERE [ua].[Id] = @__pTodo_Id_0 (6438bdd5)
+2017-09-04T18:58:28.3140989-05:00 0HL7JT86C9CO1 [INF] Executed DbCommand (352ms) [Parameters=[@p1='?', @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Td_Todo] SET [IsCompleted] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-04T18:58:28.4051807-05:00 0HL7JT86C9CO1 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:58:28.4111876-05:00 0HL7JT86C9CO1 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 784.9891ms (afa2e885)
+2017-09-04T18:58:28.4241994-05:00 0HL7JT86C9CO1 [INF] Request finished in 860.5403ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:58:28.4502221-05:00 0HL7JT86C9CO2 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:58:28.5152819-05:00 0HL7JT86C9CO2 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:58:28.5282917-05:00 0HL7JT86C9CO2 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:58:28.5473096-05:00 0HL7JT86C9CO2 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:58:28.5563185-05:00 0HL7JT86C9CO2 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 35.5797ms (afa2e885)
+2017-09-04T18:58:28.5803398-05:00 0HL7JT86C9CO2 [INF] Request finished in 130.075ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:59:17.0766293-05:00 0HL7JT86C9CO3 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T18:59:17.2087470-05:00 0HL7JT86C9CO4 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T18:59:17.2868193-05:00 0HL7JT86C9CO3 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:59:17.4579733-05:00 0HL7JT86C9CO3 [INF] Executed DbCommand (81ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:59:17.4619761-05:00 0HL7JT86C9CO4 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T18:59:17.4759884-05:00 0HL7JT86C9CO3 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:59:17.5520597-05:00 0HL7JT86C9CO4 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T18:59:17.5540596-05:00 0HL7JT86C9CO3 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 231.6169ms (afa2e885)
+2017-09-04T18:59:17.9934551-05:00 0HL7JT86C9CO4 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T18:59:18.0114729-05:00 0HL7JT86C9CO3 [INF] Request finished in 1009.005ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T18:59:18.0404983-05:00 0HL7JT86C9CO4 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 536.3452ms (afa2e885)
+2017-09-04T18:59:18.0725276-05:00 0HL7JT86C9CO4 [INF] Request finished in 902.206ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:00:48.6393334-05:00 0HL7JT86C9CO5 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T19:00:48.6533457-05:00 0HL7JT86C9CO5 [INF] Request finished in 13.0629ms 204  (15c52c40)
+2017-09-04T19:00:48.7574411-05:00 0HL7JT86C9CO6 [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 142 (e5be5b71)
+2017-09-04T19:00:48.7804618-05:00 0HL7JT86C9CO6 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:00:48.7934736-05:00 0HL7JT86C9CO6 [INF] Executed DbCommand (2ms) [Parameters=[@__pTodo_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ua].[Id], [ua].[Description], [ua].[DueDate], [ua].[IsCompleted], [ua].[Priority], [ua].[TdUserId]
+FROM [Td_Todo] AS [ua]
+WHERE [ua].[Id] = @__pTodo_Id_0 (6438bdd5)
+2017-09-04T19:00:48.9295952-05:00 0HL7JT86C9CO6 [INF] Executed DbCommand (122ms) [Parameters=[@p1='?', @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Td_Todo] SET [IsCompleted] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-04T19:00:48.9496136-05:00 0HL7JT86C9CO6 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:00:48.9556202-05:00 0HL7JT86C9CO6 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 177.691ms (afa2e885)
+2017-09-04T19:00:49.1808241-05:00 0HL7JT86C9CO6 [INF] Request finished in 421.2391ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:00:49.2358718-05:00 0HL7JT86C9CO7 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T19:00:49.8033833-05:00 0HL7JT86C9CO7 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:00:49.9304975-05:00 0HL7JT86C9CO7 [INF] Executed DbCommand (119ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:00:49.9405073-05:00 0HL7JT86C9CO7 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:00:49.9455122-05:00 0HL7JT86C9CO7 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 140.0555ms (afa2e885)
+2017-09-04T19:00:49.9515165-05:00 0HL7JT86C9CO7 [INF] Request finished in 715.6793ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:02:46.3267188-05:00 0HL7JT86C9CO8 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T19:02:46.8451879-05:00 0HL7JT86C9CO9 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T19:02:46.9612934-05:00 0HL7JT86C9CO8 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:02:47.0473706-05:00 0HL7JT86C9CO9 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:02:50.9929273-05:00 0HL7JT86C9CO9 [INF] Executed DbCommand (3,839ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:02:50.9929273-05:00 0HL7JT86C9CO8 [INF] Executed DbCommand (3,687ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:02:51.8747242-05:00 0HL7JT86C9CO8 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:02:51.8727212-05:00 0HL7JT86C9CO9 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:02:52.3261305-05:00 0HL7JT86C9CO9 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 5330.7459ms (afa2e885)
+2017-09-04T19:02:52.3481512-05:00 0HL7JT86C9CO8 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 5403.4188ms (afa2e885)
+2017-09-04T19:02:52.4112084-05:00 0HL7JT86C9CO8 [INF] Request finished in 6103.7678ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:02:52.4112084-05:00 0HL7JT86C9CO9 [INF] Request finished in 6022.195ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:04:12.0674003-05:00 0HL7JT86C9COA [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T19:04:12.2055237-05:00 0HL7JT86C9COA [INF] Request finished in 138.941ms 204  (15c52c40)
+2017-09-04T19:04:12.2735858-05:00 0HL7JT86C9COB [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 143 (e5be5b71)
+2017-09-04T19:04:12.3406455-05:00 0HL7JT86C9COB [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:04:12.8410969-05:00 0HL7JT86C9COB [INF] Executed DbCommand (448ms) [Parameters=[@__pTodo_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ua].[Id], [ua].[Description], [ua].[DueDate], [ua].[IsCompleted], [ua].[Priority], [ua].[TdUserId]
+FROM [Td_Todo] AS [ua]
+WHERE [ua].[Id] = @__pTodo_Id_0 (6438bdd5)
+2017-09-04T19:04:14.3274771-05:00 0HL7JT86C9COB [INF] Executed DbCommand (998ms) [Parameters=[@p1='?', @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Td_Todo] SET [IsCompleted] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-04T19:04:14.3554635-05:00 0HL7JT86C9COB [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:04:14.3624698-05:00 0HL7JT86C9COB [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 2076.2291ms (afa2e885)
+2017-09-04T19:04:14.3754820-05:00 0HL7JT86C9COB [INF] Request finished in 2100.5764ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:04:14.4295296-05:00 0HL7JT86C9COC [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T19:04:14.4425421-05:00 0HL7JT86C9COC [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:04:14.6197084-05:00 0HL7JT86C9COC [INF] Executed DbCommand (169ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:04:14.6547338-05:00 0HL7JT86C9COC [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:04:14.6617394-05:00 0HL7JT86C9COC [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 216.2357ms (afa2e885)
+2017-09-04T19:04:14.6747519-05:00 0HL7JT86C9COC [INF] Request finished in 239.3169ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:04:22.5948952-05:00 0HL7JT86C9COD [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T19:04:22.6459413-05:00 0HL7JT86C9COD [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:04:22.9322014-05:00 0HL7JT86C9COD [INF] Executed DbCommand (271ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:04:22.9642280-05:00 0HL7JT86C9COD [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:04:22.9752379-05:00 0HL7JT86C9COD [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 323.6322ms (afa2e885)
+2017-09-04T19:04:22.9892502-05:00 0HL7JT86C9COD [INF] Request finished in 397.3857ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:04:29.9725489-05:00 0HL7JT86C9COE [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T19:04:29.9955705-05:00 0HL7JT86C9COE [INF] Request finished in 26.7833ms 204  (15c52c40)
+2017-09-04T19:04:30.0065808-05:00 0HL7JT86C9COF [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 142 (e5be5b71)
+2017-09-04T19:04:30.0255964-05:00 0HL7JT86C9COF [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:04:30.1196828-05:00 0HL7JT86C9COF [INF] Executed DbCommand (85ms) [Parameters=[@__pTodo_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ua].[Id], [ua].[Description], [ua].[DueDate], [ua].[IsCompleted], [ua].[Priority], [ua].[TdUserId]
+FROM [Td_Todo] AS [ua]
+WHERE [ua].[Id] = @__pTodo_Id_0 (6438bdd5)
+2017-09-04T19:04:30.2948392-05:00 0HL7JT86C9COF [INF] Executed DbCommand (147ms) [Parameters=[@p1='?', @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Td_Todo] SET [IsCompleted] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-04T19:04:30.3098532-05:00 0HL7JT86C9COF [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:04:30.3148581-05:00 0HL7JT86C9COF [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 291.2784ms (afa2e885)
+2017-09-04T19:04:30.3428826-05:00 0HL7JT86C9COF [INF] Request finished in 331.0093ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:04:30.4159496-05:00 0HL7JT86C9COG [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T19:04:30.4469776-05:00 0HL7JT86C9COG [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:04:30.4760038-05:00 0HL7JT86C9COH [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T19:04:30.5170404-05:00 0HL7JT86C9COH [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:04:30.6041201-05:00 0HL7JT86C9COH [INF] Executed DbCommand (75ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:04:30.6341456-05:00 0HL7JT86C9COG [INF] Executed DbCommand (94ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:04:30.6771852-05:00 0HL7JT86C9COH [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:04:30.7112159-05:00 0HL7JT86C9COG [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:04:30.7222259-05:00 0HL7JT86C9COG [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 269.5773ms (afa2e885)
+2017-09-04T19:04:30.7372402-05:00 0HL7JT86C9COH [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 207.5471ms (afa2e885)
+2017-09-04T19:04:30.7892860-05:00 0HL7JT86C9COH [INF] Request finished in 381.8097ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:04:30.8253188-05:00 0HL7JT86C9COG [INF] Request finished in 444.5032ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:05:14.7280819-05:00 0HL7JT86C9COI [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/saveTodoEntity   (e5be5b71)
+2017-09-04T19:05:14.7941396-05:00 0HL7JT86C9COI [INF] Request finished in 38.05ms 204  (15c52c40)
+2017-09-04T19:05:14.8581977-05:00 0HL7JT86C9COJ [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/saveTodoEntity application/json 100 (e5be5b71)
+2017-09-04T19:05:14.9352665-05:00 0HL7JT86C9COJ [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:05:17.4585423-05:00 0HL7JT86C9COJ [INF] Executed DbCommand (2,397ms) [Parameters=[@p0='?' (Size = 4000), @p1='?', @p2='?', @p3='?', @p4='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Td_Todo] ([Description], [DueDate], [IsCompleted], [Priority], [TdUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Td_Todo]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); (6438bdd5)
+2017-09-04T19:05:17.5115901-05:00 0HL7JT86C9COJ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:05:17.5195993-05:00 0HL7JT86C9COJ [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.SaveTodoEntity (TodoAppServer)" in 2624.7176ms (afa2e885)
+2017-09-04T19:05:17.5426181-05:00 0HL7JT86C9COJ [INF] Request finished in 2779.0541ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:05:17.9860195-05:00 0HL7JT86C9COK [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T19:05:18.0000314-05:00 0HL7JT86C9COK [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:05:18.1401570-05:00 0HL7JT86C9COK [INF] Executed DbCommand (131ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:05:18.1601759-05:00 0HL7JT86C9COK [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:05:18.1661809-05:00 0HL7JT86C9COK [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 163.6445ms (afa2e885)
+2017-09-04T19:05:18.1801935-05:00 0HL7JT86C9COK [INF] Request finished in 191.4784ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:05:53.9554620-05:00 0HL7JT86C9COL [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/todoService/deleteTodoEntity   (e5be5b71)
+2017-09-04T19:05:54.0005015-05:00 0HL7JT86C9COL [INF] Request finished in 46.8176ms 204  (15c52c40)
+2017-09-04T19:05:54.0035026-05:00 0HL7JT86C9COM [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/todoService/deleteTodoEntity application/json 143 (e5be5b71)
+2017-09-04T19:05:55.2906651-05:00 0HL7JT86C9COM [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.DeleteTodoEntity (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.TodoVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:05:56.0043076-05:00 0HL7JT86C9COM [INF] Executed DbCommand (89ms) [Parameters=[@__pTodo_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ua].[Id], [ua].[Description], [ua].[DueDate], [ua].[IsCompleted], [ua].[Priority], [ua].[TdUserId]
+FROM [Td_Todo] AS [ua]
+WHERE [ua].[Id] = @__pTodo_Id_0 (6438bdd5)
+2017-09-04T19:05:57.7068435-05:00 0HL7JT86C9COM [INF] Executed DbCommand (203ms) [Parameters=[@p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Td_Todo]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT; (6438bdd5)
+2017-09-04T19:05:58.0941940-05:00 0HL7JT86C9COM [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:05:59.1581529-05:00 0HL7JT86C9COM [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.DeleteTodoEntity (TodoAppServer)" in 3869.8472ms (afa2e885)
+2017-09-04T19:05:59.1701641-05:00 0HL7JT86C9COM [INF] Request finished in 5168.2398ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:05:59.2051945-05:00 0HL7JT86C9CON [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T19:05:59.2232112-05:00 0HL7JT86C9CON [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:05:59.4103788-05:00 0HL7JT86C9CON [INF] Executed DbCommand (180ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:05:59.4334015-05:00 0HL7JT86C9CON [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:05:59.4394065-05:00 0HL7JT86C9CON [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 216.511ms (afa2e885)
+2017-09-04T19:05:59.4514174-05:00 0HL7JT86C9CON [INF] Request finished in 243.9034ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:08:45.5004131-05:00 0HL7JT86C9COP [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T19:08:45.5004131-05:00 0HL7JT86C9COO [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T19:08:45.8747507-05:00 0HL7JT86C9COP [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:08:45.9187904-05:00 0HL7JT86C9COO [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:08:46.9407133-05:00 0HL7JT86C9COP [INF] Executed DbCommand (122ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:08:46.9537235-05:00 0HL7JT86C9COP [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:08:46.9607302-05:00 0HL7JT86C9COP [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 1227.6815ms (afa2e885)
+2017-09-04T19:08:46.9677365-05:00 0HL7JT86C9COP [INF] Request finished in 1492.3594ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:08:49.2127617-05:00 0HL7JT86C9COO [INF] Executed DbCommand (384ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:08:49.2277787-05:00 0HL7JT86C9COO [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:08:49.2337811-05:00 0HL7JT86C9COO [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 3393.7612ms (afa2e885)
+2017-09-04T19:08:49.2467917-05:00 0HL7JT86C9COO [INF] Request finished in 3763.8539ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:09:22.5138079-05:00 0HL7JT86C9COQ [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/logout   (e5be5b71)
+2017-09-04T19:09:22.5668546-05:00 0HL7JT86C9COQ [INF] Request finished in 61.9597ms 204  (15c52c40)
+2017-09-04T19:09:22.6189034-05:00 0HL7JT86C9COR [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/logout application/json 0 (e5be5b71)
+2017-09-04T19:09:26.6215112-05:00 0HL7JT86C9COR [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.LogOut (TodoAppServer)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:09:27.5994147-05:00 0HL7JT86C9COR [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:09:27.6804670-05:00 0HL7JT86C9COR [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.LogOut (TodoAppServer)" in 4864.1998ms (afa2e885)
+2017-09-04T19:09:27.7014856-05:00 0HL7JT86C9COR [INF] Request finished in 5141.615ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:20:26.3928626-05:00 0HL7JT86C9COS [INF] Request starting HTTP/1.1 GET http://localhost:62633/login   (e5be5b71)
+2017-09-04T19:20:31.4694386-05:00 0HL7JT86C9COS [INF] Request finished in 5065.9225ms 200 text/html (15c52c40)
+2017-09-04T19:20:34.8145122-05:00 0HL7JT86C9COT [INF] Request starting HTTP/1.1 GET http://localhost:62633/inline.bundle.js   (e5be5b71)
+2017-09-04T19:20:35.0817440-05:00 0HL7JT86C9COU [INF] Request starting HTTP/1.1 GET http://localhost:62633/polyfills.bundle.js   (e5be5b71)
+2017-09-04T19:20:35.1037172-05:00 0HL7JT86C9COV [INF] Request starting HTTP/1.1 GET http://localhost:62633/scripts.bundle.js   (e5be5b71)
+2017-09-04T19:20:35.1067230-05:00 0HL7JT86C9CP0 [INF] Request starting HTTP/1.1 GET http://localhost:62633/main.bundle.js   (e5be5b71)
+2017-09-04T19:20:35.1607679-05:00 0HL7JT86C9CP1 [INF] Request starting HTTP/1.1 GET http://localhost:62633/vendor.bundle.js   (e5be5b71)
+2017-09-04T19:20:35.5120863-05:00 0HL7JT86C9COV [INF] Sending file. Request path: '"/scripts.bundle.js"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\scripts.bundle.js"' (27b0a520)
+2017-09-04T19:20:35.5150906-05:00 0HL7JT86C9COT [INF] Sending file. Request path: '"/inline.bundle.js"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\inline.bundle.js"' (27b0a520)
+2017-09-04T19:20:35.5210971-05:00 0HL7JT86C9COU [INF] Sending file. Request path: '"/polyfills.bundle.js"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\polyfills.bundle.js"' (27b0a520)
+2017-09-04T19:20:35.5270991-05:00 0HL7JT86C9CP0 [INF] Sending file. Request path: '"/main.bundle.js"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\main.bundle.js"' (27b0a520)
+2017-09-04T19:20:35.5311031-05:00 0HL7JT86C9CP1 [INF] Sending file. Request path: '"/vendor.bundle.js"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\vendor.bundle.js"' (27b0a520)
+2017-09-04T19:20:35.9044387-05:00 0HL7JT86C9CP2 [INF] Request starting HTTP/1.1 GET http://localhost:62633/styles.bundle.js   (e5be5b71)
+2017-09-04T19:20:35.9084423-05:00 0HL7JT86C9CP2 [INF] Sending file. Request path: '"/styles.bundle.js"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\styles.bundle.js"' (27b0a520)
+2017-09-04T19:20:36.0535774-05:00 0HL7JT86C9COT [INF] Request finished in 1259.2607ms 200 application/javascript (15c52c40)
+2017-09-04T19:20:36.4589399-05:00 0HL7JT86C9COV [INF] Request finished in 1400.6144ms 200 application/javascript (15c52c40)
+2017-09-04T19:20:36.4729545-05:00 0HL7JT86C9CP0 [INF] Request finished in 1363.0643ms 200 application/javascript (15c52c40)
+2017-09-04T19:20:36.5119878-05:00 0HL7JT86C9COU [INF] Request finished in 1439.8366ms 200 application/javascript (15c52c40)
+2017-09-04T19:20:36.5290027-05:00 0HL7JT86C9CP2 [INF] Request finished in 616.1988ms 200 application/javascript (15c52c40)
+2017-09-04T19:20:40.5676461-05:00 0HL7JT86C9CP1 [INF] Request finished in 5446.883ms 200 application/javascript (15c52c40)
+2017-09-04T19:20:48.4787809-05:00 0HL7JT86C9CP3 [INF] Request starting HTTP/1.1 GET http://localhost:62633/assets/img/icon.png   (e5be5b71)
+2017-09-04T19:20:48.4817832-05:00 0HL7JT86C9CP3 [INF] Sending file. Request path: '"/assets/img/icon.png"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\assets\img\icon.png"' (27b0a520)
+2017-09-04T19:20:48.4917919-05:00 0HL7JT86C9CP3 [INF] Request finished in 13.399ms 200 image/png (15c52c40)
+2017-09-04T19:20:49.0172662-05:00 0HL7JT86C9CP4 [INF] Request starting HTTP/1.1 GET http://localhost:62633/favicon1.ico   (e5be5b71)
+2017-09-04T19:20:49.0242733-05:00 0HL7JT86C9CP4 [INF] Sending file. Request path: '"/favicon1.ico"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\favicon1.ico"' (27b0a520)
+2017-09-04T19:20:49.0723170-05:00 0HL7JT86C9CP4 [INF] Request finished in 39.6838ms 200 image/x-icon (15c52c40)
+2017-09-04T19:21:51.2765019-05:00 0HL7JT86C9CP5 [INF] Request starting HTTP/1.1 GET http://localhost:62633/configFile.json   (e5be5b71)
+2017-09-04T19:21:51.7549327-05:00 0HL7JT86C9CP5 [INF] Sending file. Request path: '"/configFile.json"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\configFile.json"' (27b0a520)
+2017-09-04T19:21:51.7639416-05:00 0HL7JT86C9CP5 [INF] Request finished in 527.1858ms 200 application/json (15c52c40)
+2017-09-04T19:21:51.7709471-05:00 0HL7JT86C9CP6 [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 57 (e5be5b71)
+2017-09-04T19:21:52.9900474-05:00 0HL7JT86C9CP6 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:22:16.4993418-05:00 0HL7JT86C9CP7 [INF] Request starting HTTP/1.1 GET http://localhost:62633/polyfills.bundle.js.map   (e5be5b71)
+2017-09-04T19:22:16.5073497-05:00 0HL7JT86C9CP8 [INF] Request starting HTTP/1.1 GET http://localhost:62633/scripts.bundle.js.map   (e5be5b71)
+2017-09-04T19:22:16.5133559-05:00 0HL7JT86C9CP9 [INF] Request starting HTTP/1.1 GET http://localhost:62633/inline.bundle.js.map   (e5be5b71)
+2017-09-04T19:22:16.5193602-05:00 0HL7JT86C9CP9 [INF] Sending file. Request path: '"/inline.bundle.js.map"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\inline.bundle.js.map"' (27b0a520)
+2017-09-04T19:22:16.5253656-05:00 0HL7JT86C9CP8 [INF] Sending file. Request path: '"/scripts.bundle.js.map"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\scripts.bundle.js.map"' (27b0a520)
+2017-09-04T19:22:16.5443828-05:00 0HL7JT86C9CP7 [INF] Sending file. Request path: '"/polyfills.bundle.js.map"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\polyfills.bundle.js.map"' (27b0a520)
+2017-09-04T19:22:16.5533913-05:00 0HL7JT86C9CPA [INF] Request starting HTTP/1.1 GET http://localhost:62633/styles.bundle.js.map   (e5be5b71)
+2017-09-04T19:22:16.6554853-05:00 0HL7JT86C9CPB [INF] Request starting HTTP/1.1 GET http://localhost:62633/vendor.bundle.js.map   (e5be5b71)
+2017-09-04T19:22:16.6925160-05:00 0HL7JT86C9CP9 [INF] Request finished in 174.5886ms 200 text/plain (15c52c40)
+2017-09-04T19:22:16.7045276-05:00 0HL7JT86C9CPB [INF] Sending file. Request path: '"/vendor.bundle.js.map"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\vendor.bundle.js.map"' (27b0a520)
+2017-09-04T19:22:16.7195415-05:00 0HL7JT86C9CP8 [INF] Request finished in 210.2234ms 200 text/plain (15c52c40)
+2017-09-04T19:22:16.7425615-05:00 0HL7JT86C9CPC [INF] Request starting HTTP/1.1 GET http://localhost:62633/main.bundle.js.map   (e5be5b71)
+2017-09-04T19:22:16.7675845-05:00 0HL7JT86C9CPA [INF] Sending file. Request path: '"/styles.bundle.js.map"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\styles.bundle.js.map"' (27b0a520)
+2017-09-04T19:22:16.7916057-05:00 0HL7JT86C9CPC [INF] Sending file. Request path: '"/main.bundle.js.map"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\main.bundle.js.map"' (27b0a520)
+2017-09-04T19:22:16.7936075-05:00 0HL7JT86C9CP7 [INF] Request finished in 273.8381ms 200 text/plain (15c52c40)
+2017-09-04T19:22:16.8286395-05:00 0HL7JT86C9CPC [INF] Request finished in 81.1628ms 200 text/plain (15c52c40)
+2017-09-04T19:22:16.8726789-05:00 0HL7JT86C9CPA [INF] Request finished in 356.0526ms 200 text/plain (15c52c40)
+2017-09-04T19:22:19.1597420-05:00 0HL7JT86C9CPB [INF] Request finished in 2626.8057ms 200 text/plain (15c52c40)
+2017-09-04T19:22:26.7706068-05:00 0HL7JT86C9CPD [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 57 (e5be5b71)
+2017-09-04T19:22:26.8056384-05:00 0HL7JT86C9CPD [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:22:39.6512226-05:00 0HL7JT86C9CPD [INF] Executed DbCommand (2,542ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-04T19:22:40.5250122-05:00 0HL7JT86C9CPD [INF] Executed DbCommand (48ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-04T19:22:43.3815886-05:00 0HL7JT86C9CPD [WRN] Invalid password for user "1". (c2dce6c7)
+2017-09-04T19:22:43.3855919-05:00 0HL7JT86C9CPD [WRN] User "1" failed to provide the correct password. (ec8d2479)
+2017-09-04T19:22:43.6548343-05:00 0HL7JT86C9CPD [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:22:43.9100680-05:00 0HL7JT86C9CPD [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 17118.3648ms (afa2e885)
+2017-09-04T19:22:43.9370893-05:00 0HL7JT86C9CPD [INF] Request finished in 17168.9065ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:22:45.1221585-05:00 0HL7JT86C9CP6 [ERR] An exception occurred in the database while iterating the results of a query.
+ (3b5ca34b)
+System.Data.SqlClient.SqlException: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=39790; handshake=3254;  ---> System.ComponentModel.Win32Exception: Tiempo de espera de la operación de espera agotado
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.<OpenAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable.AsyncEnumerator.<BufferlessMoveNext>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__6`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable.AsyncEnumerator.<MoveNext>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.SelectAsyncEnumerable`2.SelectAsyncEnumerator.<MoveNext>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.<_FirstOrDefault>d__82`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.TaskResultAsyncEnumerable`1.Enumerator.<MoveNext>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.SelectAsyncEnumerable`2.SelectAsyncEnumerator.<MoveNext>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+ClientConnectionId:cd77611a-615c-4a60-8322-e0e1f5f16f2e
+Error Number:-2,State:0,Class:11
+2017-09-04T19:22:46.0570001-05:00 0HL7JT86C9CP6 [ERR] Error ApiAuthController.Login --> Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=39790; handshake=3254;  (06d0083d)
+2017-09-04T19:22:46.0690113-05:00 0HL7JT86C9CP6 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:22:46.0750183-05:00 0HL7JT86C9CP6 [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 54099.4731ms (afa2e885)
+2017-09-04T19:22:46.0960361-05:00 0HL7JT86C9CP6 [INF] Request finished in 54324.5457ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:23:55.6553005-05:00 0HL7JT86C9CPE [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 55 (e5be5b71)
+2017-09-04T19:23:55.8554810-05:00 0HL7JT86C9CPE [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:23:55.9225408-05:00 0HL7JT86C9CPE [INF] Executed DbCommand (36ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-04T19:23:55.9375547-05:00 0HL7JT86C9CPE [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-04T19:23:58.2496404-05:00 0HL7JT86C9CPE [INF] Executed DbCommand (497ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [TdUserRole] AS [userRole]
+INNER JOIN [TdRole] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-04T19:23:58.4668367-05:00 0HL7JT86C9CPE [INF] Executed DbCommand (118ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[TodoUserId], [uc].[UserId]
+FROM [TdUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-04T19:24:00.6908683-05:00 0HL7JT86C9CPE [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-04T19:24:00.7088850-05:00 0HL7JT86C9CPE [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:24:00.7279025-05:00 0HL7JT86C9CPE [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 4915.9372ms (afa2e885)
+2017-09-04T19:24:00.7509225-05:00 0HL7JT86C9CPE [INF] Request finished in 5115.6504ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:24:00.9170731-05:00 0HL7JT86C9CPF [INF] Request starting HTTP/1.1 GET http://localhost:62633/assets/img/backgrounds/header-bg.png   (e5be5b71)
+2017-09-04T19:24:00.9240791-05:00 0HL7JT86C9CPF [INF] Sending file. Request path: '"/assets/img/backgrounds/header-bg.png"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\assets\img\backgrounds\header-bg.png"' (27b0a520)
+2017-09-04T19:24:00.9761256-05:00 0HL7JT86C9CPF [INF] Request finished in 60.3132ms 200 image/png (15c52c40)
+2017-09-04T19:24:01.0191641-05:00 0HL7JT86C9CPG [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-04T19:24:01.1382726-05:00 0HL7JT86C9CPH [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-04T19:24:01.1753057-05:00 0HL7JT86C9CPG [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-04T19:24:01.1793096-05:00 0HL7JT86C9CPH [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-04T19:24:01.2153421-05:00 0HL7JT86C9CPG [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:24:01.2163438-05:00 0HL7JT86C9CPH [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:24:01.4645654-05:00 0HL7JT86C9CPG [INF] Executed DbCommand (213ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:24:01.4885882-05:00 0HL7JT86C9CPG [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:24:01.4935920-05:00 0HL7JT86C9CPG [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 300.4871ms (afa2e885)
+2017-09-04T19:24:01.5176155-05:00 0HL7JT86C9CPG [INF] Request finished in 486.6712ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:24:01.6066936-05:00 0HL7JT86C9CPH [INF] Executed DbCommand (325ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-04T19:24:01.6197053-05:00 0HL7JT86C9CPH [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:24:01.6227088-05:00 0HL7JT86C9CPH [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 428.5676ms (afa2e885)
+2017-09-04T19:24:01.6287142-05:00 0HL7JT86C9CPH [INF] Request finished in 509.6007ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-04T19:24:02.2692920-05:00 0HL7JT86C9CPI [INF] Request starting HTTP/1.1 GET http://localhost:62633/assets/img/avatars/noavatar.png   (e5be5b71)
+2017-09-04T19:24:02.2732948-05:00 0HL7JT86C9CPI [INF] Sending file. Request path: '"/assets/img/avatars/noavatar.png"'. Physical path: '"D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\wwwroot\assets\img\avatars\noavatar.png"' (27b0a520)
+2017-09-04T19:24:02.5965879-05:00 0HL7JT86C9CPI [INF] Request finished in 320.3154ms 200 image/png (15c52c40)
+2017-09-04T19:24:13.1471033-05:00 0HL7JT86C9CPJ [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/logout application/json 0 (e5be5b71)
+2017-09-04T19:24:13.1591149-05:00 0HL7JT86C9CPJ [INF] HttpContext.User merged via AutomaticAuthentication from authenticationScheme: "Identity.Application". (bdba1d38)
+2017-09-04T19:24:13.1711253-05:00 0HL7JT86C9CPJ [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.LogOut (TodoAppServer)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-04T19:24:13.2001504-05:00 0HL7JT86C9CPJ [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2017-09-04T19:24:13.2061554-05:00 0HL7JT86C9CPJ [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2017-09-04T19:24:13.2091593-05:00 0HL7JT86C9CPJ [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2017-09-04T19:24:13.2221706-05:00 0HL7JT86C9CPJ [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-04T19:24:13.2301778-05:00 0HL7JT86C9CPJ [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.LogOut (TodoAppServer)" in 55.5193ms (afa2e885)
+2017-09-04T19:24:13.2582039-05:00 0HL7JT86C9CPJ [INF] Request finished in 95.8133ms 200 application/json; charset=utf-8 (15c52c40)

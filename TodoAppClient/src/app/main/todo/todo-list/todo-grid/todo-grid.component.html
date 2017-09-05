@@ -1,0 +1,51 @@
+<div fxLayout="row" fxLayoutAlign="space-between center" class="space-filter" style="margin-bottom: 15px;">
+    <div></div>
+    <div>
+        <button md-mini-fab class="button-home" (click)="openTask(null, true)" mdTooltip="New Task" *ngIf="!isCompleted"><md-icon>add</md-icon></button>
+    </div>
+</div>
+
+<dx-data-grid 
+    id="todoGrid"
+    [dataSource]="dataSourceTodo"
+    [showColumnLines]="true"
+    [showRowLines]="true"
+    [showBorders]="true"
+    [rowAlternationEnabled]="true">
+
+    <dxo-selection mode="single"></dxo-selection>
+
+    <!--<dxi-column dataField="id" caption="Nbr." ></dxi-column>-->
+    <dxi-column dataField="description" caption="Description"></dxi-column>
+    <dxi-column dataField="dueDate" caption="Due Date" dataType="date" format="shortDateShortTime"></dxi-column>
+    <dxi-column dataField="priority" caption="Priority" cellTemplate="priorityTemplate" alignment="left"></dxi-column>
+    <dxi-column caption="Actions" cellTemplate="actionTemplate" [width]="150" ></dxi-column>
+
+    <div *dxTemplate="let p of 'priorityTemplate'" class="icon-button-grid">
+        <div *ngIf="p.data.priority == 1" fxLayout="row" fxLayoutAlign="start center">
+            <md-icon mdTooltip="High" class="high-icon">error</md-icon><span class="text-icon">High</span>
+        </div>
+        <div *ngIf="p.data.priority == 2" fxLayout="row" fxLayoutAlign="start center">
+            <md-icon mdTooltip="Normal" class="normal-icon">remove_circle</md-icon><span class="text-icon">Normal</span>
+        </div>
+        <div *ngIf="p.data.priority == 3" fxLayout="row" fxLayoutAlign="start center">
+            <md-icon mdTooltip="Low" class="low-icon">arrow_drop_down_circle</md-icon><span class="text-icon">Low</span>
+        </div>
+    </div>
+
+    <div *dxTemplate="let act of 'actionTemplate'">
+        <div [mdMenuTriggerFor]="menu" class="small-button">
+            <md-icon class="md-16">more_horiz</md-icon>
+        </div>
+        <md-menu #menu="mdMenu">
+            <button md-menu-item *ngIf="!isCompleted" (click)="openTask(act.data, false)" >Edit</button>
+            <button md-menu-item *ngIf="!isCompleted" (click)="completingTask(act.data)" >Mark Completed</button>
+            <button md-menu-item *ngIf="isCompleted" (click)="pendingTask(act.data)" >Mark As Pending</button>
+            <button md-menu-item *ngIf="!isCompleted" (click)="delete(act.data)" >Deleted</button>
+        </md-menu>
+    </div>
+
+    <!--<dxo-remote-operations [paging]="true"></dxo-remote-operations>-->
+    <dxo-paging [pageSize]="10"></dxo-paging>
+
+</dx-data-grid>

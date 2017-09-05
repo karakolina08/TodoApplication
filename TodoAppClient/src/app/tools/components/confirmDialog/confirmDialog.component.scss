@@ -1,0 +1,40 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.container-dialog{
+
+  .container-dialog-header{
+    background-color: #29B6F6;
+    width: 100%;
+    color: white;
+    
+    .example-icon {
+      background-color: #29B6F6;
+      color: white;
+      cursor: pointer; 
+    }
+  }
+
+
+  .container-dialog-content{
+    padding: 30px 15px;
+
+    .checkbox-form{
+        margin: 1em 0;
+        padding-bottom: 6px;
+
+        .text-checkbox-form{
+          color: rgba(0,0,0,.38);
+          margin-right: 30px;
+        }
+    }
+
+  }
+
+  .container-dialog-footer{
+    padding: 2px 15px;
+    //background-color: lightgray;
+  }
+
+}

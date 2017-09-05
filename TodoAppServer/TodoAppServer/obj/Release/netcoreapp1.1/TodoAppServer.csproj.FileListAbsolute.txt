@@ -1,0 +1,10 @@
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\bin\Release\netcoreapp1.1\TodoAppServer.deps.json
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\bin\Release\netcoreapp1.1\TodoAppServer.runtimeconfig.json
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\bin\Release\netcoreapp1.1\TodoAppServer.runtimeconfig.dev.json
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\bin\Release\netcoreapp1.1\TodoAppServer.dll
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\bin\Release\netcoreapp1.1\TodoAppServer.pdb
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\obj\Release\netcoreapp1.1\TodoAppServer.csprojResolveAssemblyReference.cache
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\obj\Release\netcoreapp1.1\TodoAppServer.csproj.CoreCompileInputs.cache
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\obj\Release\netcoreapp1.1\TodoAppServer.AssemblyInfo.cs
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\obj\Release\netcoreapp1.1\TodoAppServer.dll
+D:\trabajo\HDS\templates\fury4\TodoAppServer\TodoAppServer\obj\Release\netcoreapp1.1\TodoAppServer.pdb

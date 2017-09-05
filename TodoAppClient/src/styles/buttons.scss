@@ -1,0 +1,50 @@
+.material-icons.md-16 { font-size: 16px; height: 16px; width: 16px; }
+.material-icons.md-18 { font-size: 18px; height: 18px; width: 18px; }
+.material-icons.md-24 { font-size: 24px; height: 24px; width: 24px; }
+.material-icons.md-36 { font-size: 36px; height: 36px; width: 36px; }
+.material-icons.md-48 { font-size: 48px; height: 48px; width: 48px; }
+
+.small-button{
+  text-align: center;
+  vertical-align: middle;
+  height: 16px;
+  border-radius: 3px;
+  &:hover{
+    background-color: lightgray;
+    cursor: pointer;
+  }
+  
+}
+
+.footer-form{
+  margin: 10px 0 15px 0;
+
+  .button-footer{
+    margin: 5px;
+    min-width: 112px;
+
+    .margin-icon-btn{
+      margin-right: 10px;
+    }
+  }
+
+  .save {
+    background-color: #66BB6A;
+    color: white;
+
+    &:disabled {
+      background-color: #C8E6C9 !important;
+      color: rgba(0,0,0,0.38)
+    }
+  }
+
+  .cancel{
+    background-color: #EF5350;
+    color: white;
+  }
+
+  .clear{
+    background-color: #42A5F5;
+    color: white;
+  }
+}

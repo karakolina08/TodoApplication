@@ -1,0 +1,54 @@
+<div class="dashboard-container">
+  <div class="header" fxLayout="row" fxLayoutAlign="start center">
+    <md-icon class="icon-header">home</md-icon>
+    <h1 class="text-header">Welcome {{_currentUser.firstName}} {{_currentUser.lastName}}</h1>
+  </div>
+
+  <md-tab-group>
+    <!-- ================ Todo Tab ===================== -->
+    <md-tab label="To-do List">
+      <div class="body">
+    
+        <!-- grid -->
+        <div class="traffic-sources-card chart-widget mat-elevation-z2">
+          <div class="title-container" [style.color]="textColor" fxLayout="row" fxLayoutAlign="start center">
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex>
+              <span class="title">To-do List</span>
+              <div></div>
+              <!--<button md-icon-button class="icon-button-grid" mdTooltip="Refresh" (click)="refreshUserSetupGrid()"><md-icon>refresh</md-icon></button>-->
+            </div>
+          </div>
+          <div class="content" fxLayout="column" fxLayoutAlign="space-around stretch">
+            <ms-todo-grid #todoGrid [isCompleted]="false" (reloadGrid)="reloadGrid(false)"></ms-todo-grid>
+          </div>
+        </div>
+
+      </div>
+    </md-tab>
+
+    <!-- ================ Completed Tab ===================== -->
+    <md-tab label="Completed">
+      <div class="body">
+    
+        <!-- grid -->
+        <div class="traffic-sources-card chart-widget mat-elevation-z2">
+          <div class="title-container" [style.color]="textColor" fxLayout="row" fxLayoutAlign="start center">
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxFlex>
+              <span class="title">Completed Task</span>
+              <div></div>
+              <!--<button md-icon-button class="icon-button-grid" mdTooltip="Refresh" (click)="refreshUserInternalSetupGrid()"><md-icon>refresh</md-icon></button>-->
+            </div>
+          </div>
+
+          <div class="content" fxLayout="column" fxLayoutAlign="space-around stretch">
+            <ms-todo-grid #completedTaskGrid [isCompleted]="true" (reloadGrid)="reloadGrid(true)"></ms-todo-grid>
+          </div>
+        </div>
+
+      </div>
+    </md-tab>
+  </md-tab-group>
+</div>
+
+
+

@@ -1,0 +1,29 @@
+.dashboard-container {
+  position: relative;
+
+  .header {
+    min-height: 75px;
+    //background: linear-gradient(60deg, #2196F3, #3F51B5);
+    background-color: #2196F3;
+    padding: 5px 20px;
+    margin-bottom: 0px;
+    background-image: url(/assets/img/backgrounds/header-bg.png);
+
+    .icon-header{
+      color: white;
+      margin-right: 10px;
+    }
+
+    .text-header {
+      font-size: 20px !important;
+      font-weight: 700 !important;
+      font-family: Roboto, "Helvetica Neue", sans-serif !important;
+      color: white;
+    }
+
+  }
+
+  .body{
+    padding: 1%;
+  }
+}

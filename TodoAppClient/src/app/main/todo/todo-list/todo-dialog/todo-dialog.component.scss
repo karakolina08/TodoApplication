@@ -1,0 +1,50 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.container-dialog{
+
+  .container-dialog-header{
+    background-color: #2196F3;
+    width: 100%;
+    color: white;
+    
+    .example-icon {
+      background-color: #2196F3;
+      color: white;
+      cursor: pointer; 
+    }
+  }
+
+
+  .container-dialog-content{
+    padding: 30px 15px;
+
+    .text-title-form{
+      margin: 10px 1px;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      font-family: Roboto, "Helvetica Neue", sans-serif !important;
+      color: lightslategrey;
+
+      .text-link{
+        margin-right: 20px;
+      }
+    }
+
+  }
+
+  .container-dialog-footer{
+    padding: 2px 15px;
+    //background-color: lightgray;
+  }
+
+}
+
+.todo-radio-button{
+    margin: 5px;
+}
+
+
+
+

@@ -1,0 +1,8 @@
+{
+  "MailSettings": {
+    "ToAddress": "karakolina08@gmail.com"
+  },
+  "ConnectionStrings": {
+    "TodoAppContext": "Data Source=(localdB)\\Servidor; Initial Catalog=todo_app; Integrated Security=True; MultipleActiveResultSets=True"
+  }
+}

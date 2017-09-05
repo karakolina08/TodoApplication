@@ -1,0 +1,20 @@
+<div class="container-dialog" fxLayout="column">
+  <md-toolbar class="container-dialog-header" [ngStyle]="styleHeader">
+    <span>{{title}}</span>
+    <span class="example-spacer"></span>
+    <md-icon class="example-icon" [ngStyle]="styleHeader" (click)="cancel()" mdTooltip="Close Dialog">close</md-icon>
+  </md-toolbar>
+  <div class="container-dialog-content">
+    {{message}}
+  </div>
+  <div class="container-dialog-footer">
+    <div fxLayout="row"  fxLayout.xs="column" fxLayoutAlign="end center" class="footer-form">
+      <button md-raised-button class="button-footer save" (click)="yes()">
+        <div fxFlow="row" fxLayoutAlign="center center"> Yes</div>
+      </button>
+      <button md-raised-button class="button-footer cancel" (click)="cancel()">
+        <div fxFlow="row" fxLayoutAlign="center center"> No</div>
+      </button>
+    </div>
+  </div>
+</div>
