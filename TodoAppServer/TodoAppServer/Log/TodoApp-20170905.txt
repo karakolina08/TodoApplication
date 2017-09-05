@@ -623,3 +623,203 @@ WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1
 2017-09-05T13:55:50.1463256-05:00 0HL7KG3RUR4M3 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
 2017-09-05T13:55:50.1523295-05:00 0HL7KG3RUR4M3 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 37.7401ms (afa2e885)
 2017-09-05T13:55:50.1653416-05:00 0HL7KG3RUR4M3 [INF] Request finished in 92.406ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:46:53.9128038-05:00  [INF] User profile is available. Using '"C:\Users\Leon\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-09-05T17:47:01.2028853-05:00 0HL7KM02Q6G1D [INF] Request starting HTTP/1.1 GET http://localhost:62633/   (e5be5b71)
+2017-09-05T17:47:04.2055650-05:00 0HL7KM02Q6G1D [INF] The file "/index.html" was not modified (f1f8d725)
+2017-09-05T17:47:04.5388677-05:00 0HL7KM02Q6G1D [INF] Request finished in 3514.0793ms 304 text/html (15c52c40)
+2017-09-05T17:47:04.6249423-05:00 0HL7KM02Q6G1E [INF] Request starting HTTP/1.1 GET http://localhost:62633/scripts.bundle.js   (e5be5b71)
+2017-09-05T17:47:04.6279462-05:00 0HL7KM02Q6G1F [INF] Request starting HTTP/1.1 GET http://localhost:62633/polyfills.bundle.js   (e5be5b71)
+2017-09-05T17:47:04.6379548-05:00 0HL7KM02Q6G1G [INF] Request starting HTTP/1.1 GET http://localhost:62633/vendor.bundle.js   (e5be5b71)
+2017-09-05T17:47:04.6419580-05:00 0HL7KM02Q6G1F [INF] The file "/polyfills.bundle.js" was not modified (f1f8d725)
+2017-09-05T17:47:04.6429612-05:00 0HL7KM02Q6G1G [INF] The file "/vendor.bundle.js" was not modified (f1f8d725)
+2017-09-05T17:47:04.9542422-05:00 0HL7KM02Q6G1E [INF] The file "/scripts.bundle.js" was not modified (f1f8d725)
+2017-09-05T17:47:04.9772590-05:00 0HL7KM02Q6G1H [INF] Request starting HTTP/1.1 GET http://localhost:62633/main.bundle.js   (e5be5b71)
+2017-09-05T17:47:05.0182978-05:00 0HL7KM02Q6G1H [INF] The file "/main.bundle.js" was not modified (f1f8d725)
+2017-09-05T17:47:05.0323085-05:00 0HL7KM02Q6G1F [INF] Request finished in 357.9324ms 304 application/javascript (15c52c40)
+2017-09-05T17:47:05.0363129-05:00 0HL7KM02Q6G1E [INF] Request finished in 410.9355ms 304 application/javascript (15c52c40)
+2017-09-05T17:47:05.0433219-05:00 0HL7KM02Q6G1H [INF] Request finished in 394.5407ms 304 application/javascript (15c52c40)
+2017-09-05T17:47:05.0543314-05:00 0HL7KM02Q6G1G [INF] Request finished in 414.2977ms 304 application/javascript (15c52c40)
+2017-09-05T17:47:05.1033747-05:00 0HL7KM02Q6G1I [INF] Request starting HTTP/1.1 GET http://localhost:62633/styles.bundle.js   (e5be5b71)
+2017-09-05T17:47:05.1524207-05:00 0HL7KM02Q6G1J [INF] Request starting HTTP/1.1 GET http://localhost:62633/inline.bundle.js   (e5be5b71)
+2017-09-05T17:47:05.1744359-05:00 0HL7KM02Q6G1I [INF] The file "/styles.bundle.js" was not modified (f1f8d725)
+2017-09-05T17:47:05.1764392-05:00 0HL7KM02Q6G1J [INF] The file "/inline.bundle.js" was not modified (f1f8d725)
+2017-09-05T17:47:05.1904506-05:00 0HL7KM02Q6G1I [INF] Request finished in 105.2107ms 304 application/javascript (15c52c40)
+2017-09-05T17:47:05.1934537-05:00 0HL7KM02Q6G1J [INF] Request finished in 108.275ms 304 application/javascript (15c52c40)
+2017-09-05T17:47:14.9191964-05:00 0HL7KM02Q6G1K [INF] Request starting HTTP/1.1 GET http://localhost:62633/assets/img/icon.png   (e5be5b71)
+2017-09-05T17:47:15.3565904-05:00 0HL7KM02Q6G1K [INF] The file "/assets/img/icon.png" was not modified (f1f8d725)
+2017-09-05T17:47:15.3706010-05:00 0HL7KM02Q6G1K [INF] Request finished in 450.8113ms 304 image/png (15c52c40)
+2017-09-05T17:56:39.5233945-05:00 0HL7KM02Q6G1L [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/login   (e5be5b71)
+2017-09-05T17:56:48.1701393-05:00 0HL7KM02Q6G1L [INF] Request finished in 8665.9886ms 204  (15c52c40)
+2017-09-05T17:56:48.9448618-05:00 0HL7KM02Q6G1M [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 32 (e5be5b71)
+2017-09-05T17:57:18.7560567-05:00 0HL7KM02Q6G1N [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/login   (e5be5b71)
+2017-09-05T17:57:18.7680691-05:00 0HL7KM02Q6G1N [INF] Request finished in 8.8791ms 204  (15c52c40)
+2017-09-05T17:57:18.7730709-05:00 0HL7KM02Q6G1O [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 32 (e5be5b71)
+2017-09-05T17:57:28.9402365-05:00 0HL7KM02Q6G1M [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:57:28.9402365-05:00 0HL7KM02Q6G1O [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:58:13.7760239-05:00 0HL7KM02Q6G1O [INF] Executed DbCommand (1,440ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-05T17:58:13.7760239-05:00 0HL7KM02Q6G1M [INF] Executed DbCommand (1,440ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-05T17:58:14.0502689-05:00 0HL7KM02Q6G1M [ERR] Error ApiAuthController.Login --> The Email doesn't regitered (adc808af)
+2017-09-05T17:58:14.0512702-05:00 0HL7KM02Q6G1O [ERR] Error ApiAuthController.Login --> The Email doesn't regitered (adc808af)
+2017-09-05T17:58:14.2534554-05:00 0HL7KM02Q6G1O [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:58:14.2544524-05:00 0HL7KM02Q6G1M [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:58:14.7488991-05:00 0HL7KM02Q6G1M [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 55563.4433ms (afa2e885)
+2017-09-05T17:58:14.7509002-05:00 0HL7KM02Q6G1O [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 55565.6603ms (afa2e885)
+2017-09-05T17:58:14.7859313-05:00 0HL7KM02Q6G1M [INF] Request finished in 85916.4857ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:58:14.7879331-05:00 0HL7KM02Q6G1O [INF] Request finished in 56005.6427ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:58:18.4752478-05:00 0HL7KM02Q6G1P [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/login   (e5be5b71)
+2017-09-05T17:58:18.4982681-05:00 0HL7KM02Q6G1P [INF] Request finished in 27.3638ms 204  (15c52c40)
+2017-09-05T17:58:18.5383045-05:00 0HL7KM02Q6G1Q [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 41 (e5be5b71)
+2017-09-05T17:58:18.5973568-05:00 0HL7KM02Q6G1Q [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:58:18.6393949-05:00 0HL7KM02Q6G1Q [INF] Executed DbCommand (21ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-05T17:58:18.6534075-05:00 0HL7KM02Q6G1Q [ERR] Error ApiAuthController.Login --> The Email doesn't regitered (adc808af)
+2017-09-05T17:58:18.6694219-05:00 0HL7KM02Q6G1Q [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:58:18.6754270-05:00 0HL7KM02Q6G1Q [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 114.7331ms (afa2e885)
+2017-09-05T17:58:18.6834345-05:00 0HL7KM02Q6G1Q [INF] Request finished in 148.8434ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:58:34.2384218-05:00 0HL7KM02Q6G1R [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/login   (e5be5b71)
+2017-09-05T17:58:34.2534288-05:00 0HL7KM02Q6G1R [INF] Request finished in 15.6124ms 204  (15c52c40)
+2017-09-05T17:58:34.2584375-05:00 0HL7KM02Q6G1S [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 60 (e5be5b71)
+2017-09-05T17:58:34.2734464-05:00 0HL7KM02Q6G1S [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:58:34.2874598-05:00 0HL7KM02Q6G1S [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-05T17:58:34.5817250-05:00 0HL7KM02Q6G1S [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-05T17:58:34.9750832-05:00 0HL7KM02Q6G1S [WRN] Invalid password for user "1". (c2dce6c7)
+2017-09-05T17:58:34.9780821-05:00 0HL7KM02Q6G1S [WRN] User "1" failed to provide the correct password. (ec8d2479)
+2017-09-05T17:58:34.9940942-05:00 0HL7KM02Q6G1S [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:58:35.0001007-05:00 0HL7KM02Q6G1S [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 728.8166ms (afa2e885)
+2017-09-05T17:58:35.0341305-05:00 0HL7KM02Q6G1S [INF] Request finished in 774.1635ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:59:02.2426114-05:00 0HL7KM02Q6G1T [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/login   (e5be5b71)
+2017-09-05T17:59:02.2576245-05:00 0HL7KM02Q6G1T [INF] Request finished in 14.7721ms 204  (15c52c40)
+2017-09-05T17:59:02.2626382-05:00 0HL7KM02Q6G1U [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 60 (e5be5b71)
+2017-09-05T17:59:02.2756407-05:00 0HL7KM02Q6G1U [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:59:02.2926571-05:00 0HL7KM02Q6G1U [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-05T17:59:02.3066690-05:00 0HL7KM02Q6G1U [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-05T17:59:02.3296900-05:00 0HL7KM02Q6G1U [WRN] Invalid password for user "1". (c2dce6c7)
+2017-09-05T17:59:02.3326939-05:00 0HL7KM02Q6G1U [WRN] User "1" failed to provide the correct password. (ec8d2479)
+2017-09-05T17:59:02.3477066-05:00 0HL7KM02Q6G1U [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:59:02.3537116-05:00 0HL7KM02Q6G1U [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 77.3626ms (afa2e885)
+2017-09-05T17:59:02.3847395-05:00 0HL7KM02Q6G1U [INF] Request finished in 114.2118ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:59:07.6975153-05:00 0HL7KM02Q6G1V [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/login   (e5be5b71)
+2017-09-05T17:59:07.7115271-05:00 0HL7KM02Q6G1V [INF] Request finished in 14.3875ms 204  (15c52c40)
+2017-09-05T17:59:07.7195343-05:00 0HL7KM02Q6G20 [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 57 (e5be5b71)
+2017-09-05T17:59:07.7335465-05:00 0HL7KM02Q6G20 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:59:07.7425550-05:00 0HL7KM02Q6G20 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-05T17:59:07.7585698-05:00 0HL7KM02Q6G20 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-05T17:59:07.7765871-05:00 0HL7KM02Q6G20 [WRN] Invalid password for user "1". (c2dce6c7)
+2017-09-05T17:59:07.7795902-05:00 0HL7KM02Q6G20 [WRN] User "1" failed to provide the correct password. (ec8d2479)
+2017-09-05T17:59:07.8016092-05:00 0HL7KM02Q6G20 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:59:07.8066137-05:00 0HL7KM02Q6G20 [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 75.5998ms (afa2e885)
+2017-09-05T17:59:07.8456496-05:00 0HL7KM02Q6G20 [INF] Request finished in 122.9508ms 400 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:59:15.2412964-05:00 0HL7KM02Q6G21 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/login   (e5be5b71)
+2017-09-05T17:59:15.2533091-05:00 0HL7KM02Q6G21 [INF] Request finished in 12.9474ms 204  (15c52c40)
+2017-09-05T17:59:15.2583147-05:00 0HL7KM02Q6G22 [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/login application/json 55 (e5be5b71)
+2017-09-05T17:59:15.2713218-05:00 0HL7KM02Q6G22 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" with arguments (["TodoAppServer.Models.ViewModels.LoginVM"]) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:59:15.2813320-05:00 0HL7KM02Q6G22 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0 (6438bdd5)
+2017-09-05T17:59:15.2953442-05:00 0HL7KM02Q6G22 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[Name], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Td_User] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0 (6438bdd5)
+2017-09-05T17:59:15.7327381-05:00 0HL7KM02Q6G22 [INF] Executed DbCommand (36ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [role].[Name]
+FROM [TdUserRole] AS [userRole]
+INNER JOIN [TdRole] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0 (6438bdd5)
+2017-09-05T17:59:15.7867851-05:00 0HL7KM02Q6G22 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[TodoUserId], [uc].[UserId]
+FROM [TdUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0 (6438bdd5)
+2017-09-05T17:59:17.2080626-05:00 0HL7KM02Q6G22 [ERR] An exception occurred while trying to decrypt the element. (3db2eb46)
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+2017-09-05T17:59:17.2521045-05:00 0HL7KM02Q6G22 [ERR] An exception occurred while processing the key element '"<key id=\"4bf15ab4-e9e2-48bd-bdad-50c59bc48729\" version=\"1\" />"'. (b5685f3b)
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+2017-09-05T17:59:17.3171622-05:00 0HL7KM02Q6G22 [WRN] Key {4bf15ab4-e9e2-48bd-bdad-50c59bc48729} is ineligible to be the default key because its "CreateEncryptorInstance" method failed. (52a7bec4)
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DeferredKey.<>c__DisplayClass1_0.<GetLazyEncryptorDelegate>b__0()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.CanCreateAuthenticatedEncryptor(IKey key)
+2017-09-05T17:59:17.3511917-05:00 0HL7KM02Q6G22 [WRN] Key {4bf15ab4-e9e2-48bd-bdad-50c59bc48729} is ineligible to be the default key because its "CreateEncryptorInstance" method failed. (52a7bec4)
+System.Security.Cryptography.CryptographicException: Error occurred during a cryptographic operation.
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapiCore(Byte* pbProtectedData, UInt32 cbProtectedData, Byte* pbOptionalEntropy, UInt32 cbOptionalEntropy)
+   at Microsoft.AspNetCore.DataProtection.Cng.DpapiSecretSerializerHelper.UnprotectWithDpapi(Byte[] protectedSecret)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor.Decrypt(XElement encryptedElement)
+   at Microsoft.AspNetCore.DataProtection.XmlEncryption.XmlEncryptionExtensions.DecryptElement(XElement element, IActivator activator)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager.Microsoft.AspNetCore.DataProtection.KeyManagement.Internal.IInternalXmlKeyManager.DeserializeDescriptorFromKeyElement(XElement keyElement)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DeferredKey.<>c__DisplayClass1_0.<GetLazyEncryptorDelegate>b__0()
+   at System.Lazy`1.CreateValue()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Lazy`1.get_Value()
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver.CanCreateAuthenticatedEncryptor(IKey key)
+2017-09-05T17:59:17.4002358-05:00 0HL7KM02Q6G22 [INF] Creating key {3820b5a9-d374-40ee-974d-69fdf9e8765b} with creation date 2017-09-05 22:59:17Z, activation date 2017-09-05 22:59:15Z, and expiration date 2017-12-04 22:59:15Z. (77afce94)
+2017-09-05T17:59:17.5313540-05:00 0HL7KM02Q6G22 [INF] Writing data to file '"C:\Users\Leon\AppData\Local\ASP.NET\DataProtection-Keys\key-3820b5a9-d374-40ee-974d-69fdf9e8765b.xml"'. (da22a8b1)
+2017-09-05T17:59:17.6975037-05:00 0HL7KM02Q6G22 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2017-09-05T17:59:17.7115167-05:00 0HL7KM02Q6G22 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:59:17.7345359-05:00 0HL7KM02Q6G22 [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.Login (TodoAppServer)" in 2466.3018ms (afa2e885)
+2017-09-05T17:59:17.7405416-05:00 0HL7KM02Q6G22 [INF] Request finished in 2481.7518ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:59:18.3490917-05:00 0HL7KM02Q6G23 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=false   (e5be5b71)
+2017-09-05T17:59:18.3520909-05:00 0HL7KM02Q6G24 [INF] Request starting HTTP/1.1 GET http://localhost:62633/api/todoService/todoListByUserId?userId=1&isCompleted=true   (e5be5b71)
+2017-09-05T17:59:18.6323428-05:00 0HL7KM02Q6G23 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "False"]) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:59:18.6663757-05:00 0HL7KM02Q6G24 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" with arguments (["1", "True"]) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:59:19.0547233-05:00 0HL7KM02Q6G23 [INF] Executed DbCommand (134ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-05T17:59:19.0657339-05:00 0HL7KM02Q6G24 [INF] Executed DbCommand (146ms) [Parameters=[@__userId_0='?', @__isCompleted_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT [td].[Id], [td].[TdUserId], [td].[Description], [td].[DueDate], [td].[Priority], [td].[IsCompleted]
+FROM [Td_Todo] AS [td]
+WHERE ([td].[TdUserId] = @__userId_0) AND ([td].[IsCompleted] = @__isCompleted_1) (6438bdd5)
+2017-09-05T17:59:19.1117738-05:00 0HL7KM02Q6G24 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:59:19.1468064-05:00 0HL7KM02Q6G23 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:59:19.2929374-05:00 0HL7KM02Q6G24 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 891.2784ms (afa2e885)
+2017-09-05T17:59:19.3019463-05:00 0HL7KM02Q6G23 [INF] Executed action "TodoAppServer.Controllers.Api.ApiTodoController.GetTodoList (TodoAppServer)" in 889.235ms (afa2e885)
+2017-09-05T17:59:19.3219639-05:00 0HL7KM02Q6G23 [INF] Request finished in 967.5038ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:59:19.3429828-05:00 0HL7KM02Q6G24 [INF] Request finished in 982.4869ms 200 application/json; charset=utf-8 (15c52c40)
+2017-09-05T17:59:37.9376973-05:00 0HL7KM02Q6G25 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:62633/api/authService/logout   (e5be5b71)
+2017-09-05T17:59:37.9527096-05:00 0HL7KM02Q6G25 [INF] Request finished in 14.9769ms 204  (15c52c40)
+2017-09-05T17:59:37.9657391-05:00 0HL7KM02Q6G26 [INF] Request starting HTTP/1.1 POST http://localhost:62633/api/authService/logout application/json 0 (e5be5b71)
+2017-09-05T17:59:37.9777321-05:00 0HL7KM02Q6G26 [INF] Executing action method "TodoAppServer.Controllers.Api.ApiAuthController.LogOut (TodoAppServer)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-09-05T17:59:38.0007524-05:00 0HL7KM02Q6G26 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-09-05T17:59:38.0077587-05:00 0HL7KM02Q6G26 [INF] Executed action "TodoAppServer.Controllers.Api.ApiAuthController.LogOut (TodoAppServer)" in 30.1259ms (afa2e885)
+2017-09-05T17:59:38.0167684-05:00 0HL7KM02Q6G26 [INF] Request finished in 48.6691ms 200 application/json; charset=utf-8 (15c52c40)

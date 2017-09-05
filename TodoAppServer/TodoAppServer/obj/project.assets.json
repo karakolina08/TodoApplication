@@ -11122,11 +11122,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\trabajo\\HDS\\templates\\fury4\\TodoAppServer\\TodoAppServer\\TodoAppServer.csproj",
+      "projectUniqueName": "D:\\TodoApp\\TodoApp\\TodoAppServer\\TodoAppServer\\TodoAppServer.csproj",
       "projectName": "TodoAppServer",
-      "projectPath": "D:\\trabajo\\HDS\\templates\\fury4\\TodoAppServer\\TodoAppServer\\TodoAppServer.csproj",
+      "projectPath": "D:\\TodoApp\\TodoApp\\TodoAppServer\\TodoAppServer\\TodoAppServer.csproj",
       "packagesPath": "C:\\Users\\Leon\\.nuget\\packages\\",
-      "outputPath": "D:\\trabajo\\HDS\\templates\\fury4\\TodoAppServer\\TodoAppServer\\obj\\",
+      "outputPath": "D:\\TodoApp\\TodoApp\\TodoAppServer\\TodoAppServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Leon\\AppData\\Roaming\\NuGet\\NuGet.Config",
